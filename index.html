@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cajero Online</title>
+</head>
+<body>
+    <form id="formAction">
+        <h1 class="title">Iniciar Sesion</h1>
+        <label for="">
+            <i class="fa-solid fa-user"></i>
+            <input placeholder="Usuario" type="text" id="username">
+        </label>
+        <label for="">
+            <i class="fa-solid fa-lock"></i>
+            <input placeholder="Contraseña" type="password" id="password">
+        </label>
+        <a href="#" class="link">Restablecer Contraseña</a>
+
+        <button id="button">Login</button>
+    </form>
+
+    <div class="container hide" id="menu">
+        <h1 class="title">Bienvenido a Cajero Online</h1>
+        <p>Dinero Disponible</p>
+        <i class="fa-solid fa-dollar-sign"></i>
+        <p class="dineroD" id="saldo"></p>
+
+        <div class="containerConsultar">
+            <i class="fa-solid fa-money-bill-1-wave"></i>
+            
+        </div>
+        <p class="btn btn-lg btn-success retro-btn mt-3 mr-3" id="saldo" onclick="mostrarSaldo()"></p>
+        <p id="mensaje"></p>
+        <div class="containerDepositar">
+            <i class="fa-solid fa-money-bill-1"></i>
+            <input type="number" id="btnDepositar">
+            <button class="button" onclick="depositar()">Depositar Dinero</button>
+        </div>
+        <div class="containerRetirar">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <input type="number" id="btnRetirar">
+            <button class="button" onclick="retirar()">Retirar Dinero</button>
+        </div>
+        
+    </div>
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>         
